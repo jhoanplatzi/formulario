@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto IA</title>
+  <style>
+    /* Estilos CSS integrados */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header h1 span {
+      font-size: 3rem;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    form label, form input, form button, form select {
+      display: block;
+      margin: 10px 0;
+    }
+
+    form button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 1rem 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .whatsapp-link {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .whatsapp-link:hover {
+      background-color: #128c7e;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      🤖 BIENVENIDO AL PROYECTO CREADO POR INTELIGENCIA ARTIFICIAL 🌐
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Sobre Mí</h2>
+    <p>Esto lo que estoy haciendo va a quedar de enseñanza para ti que estas viendo esto para que puedas comprender que nunca debes parar de aprender por ningun motivo. Es nuestro deber ejercitar nuestro cerebro por medio del ejercicio del aprendizaje.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <div class="card">
+      <h3>Proyecto 1</h3>
+      <p>Descripción breve de este proyecto interesante.</p>
+    </div>
+    <div class="card">
+      <h3>Proyecto 2</h3>
+      <p>Descripción breve de otro proyecto increíble.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <form id="contact-form">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="contact-choice">¿Cómo te gustaría recibir el formulario?</label>
+      <select id="contact-choice" name="contact-choice" required>
+        <option value="email">Correo Electrónico</option>
+        <option value="whatsapp">WhatsApp</option>
+      </select>
+
+      <h3>Responde las siguientes preguntas:</h3>
+      <table>
+        <tr>
+          <td>¿Qué tal te parece esta página web?</td>
+          <td>Si <input type="checkbox" name="q1" value="si"> No <input type="checkbox" name="q1" value="no"></td>
+        </tr>
+        <tr>
+          <td>¿Crees que esto fue un proceso simple?</td>
+          <td>Si <input type="checkbox" name="q2" value="si"> No <input type="checkbox" name="q2" value="no"></td>
+        </tr>
+        <tr>
+          <td>¿Si pones de tu empeño, crees que puedes crear una página web?</td>
+          <td>Si <input type="checkbox" name="q3" value="si"> No <input type="checkbox" name="q3" value="no"></td>
+        </tr>
+        <tr>
+          <td>¿Sabías que esto no es tan difícil si de verdad le pones todo tu empeño?</td>
+          <td>Si <input type="checkbox" name="q4" value="si"> No <input type="checkbox" name="q4" value="no"></td>
+        </tr>
+      </table>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p>Si prefieres contactarme por WhatsApp, haz clic en el siguiente enlace:</p>
+    <a href="https://wa.me/556298894392" class="whatsapp-link" target="_blank">Contactar por WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // JavaScript para procesar el formulario
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Obtener las respuestas y el contacto elegido
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const contactChoice = document.getElementById("contact-choice").value;
+      const questions = {
+        q1: document.querySelector("input[name='q1']:checked")?.value || 'No respondido',
+        q2: document.querySelector("input[name='q2']:checked")?.value || 'No respondido',
+        q3: document.querySelector("input[name='q3']:checked")?.value || 'No respondido',
+        q4: document.querySelector("input[name='q4']:checked")?.value || 'No respondido'
+      };
+
+      // Crear un mensaje con las respuestas
+      let message = `Formulario enviado por ${name} (${email})\n\n`;
+      message += `1) ¿Qué tal te parece esta página web? ${questions.q1}\n`;
+      message += `2) ¿Crees que esto fue un proceso simple? ${questions.q2}\n`;
+      message += `3) ¿Si pones de tu empeño, crees que puedes crear una página web? ${questions.q3}\n`;
+      message += `4) ¿Sabías que esto no es tan difícil si de verdad le pones todo tu empeño? ${questions.q4}\n`;
+
+      // Lógica para enviar el formulario (dependiendo de la elección del usuario)
+      if (contactChoice === 'email') {
+        window.location.href = `mailto:${email}?subject=Formulario de Contacto&body=${encodeURIComponent(message)}`;
+      } else if (contactChoice === 'whatsapp') {
+        const whatsappUrl = `https://wa.me/556298894392?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+      }
+
+      alert("¡Formulario enviado!");
+    });
+  </script>
+</body>
+</html>
